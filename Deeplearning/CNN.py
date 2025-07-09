@@ -9,8 +9,8 @@ y = np.array([[0],[1],[1],[0]])
 
 # Build DNN model
 model = Sequential()
-model.add(Dense(4, input_dim=2, activation='relu'))  # Hidden layer with 4 neurons
-model.add(Dense(1, activation='sigmoid'))            # Output layer
+model.add(Dense(4, input_dim=2, activation='relu'))     
+model.add(Dense(1, activation='sigmoid'))             
 
 # Compile model
 model.compile(optimizer=Adam(learning_rate=0.1), loss='binary_crossentropy', metrics=['accuracy'])
